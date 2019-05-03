@@ -1,3 +1,3 @@
-# Authentication Application frontend using Angular
-npm install
+# Authentication frontend using Angular
+npm install, 
 ng serve --open
