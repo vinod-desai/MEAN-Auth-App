@@ -1,0 +1,17 @@
+<div *ngIf="user">
+  <h2 class="page-header">
+    {{ user.name }}
+  </h2>
+  <h3>
+    {{ user.username }}
+  </h3>
+  <h3>
+    {{ user.email }}
+  </h3>
+</div>
+<div *ngIf="errObj">
+  <h2 class="page-header">
+    {{ errObj.message }}
+  </h2>
+  <h3>Status: {{ errObj.status }}</h3>
+</div>

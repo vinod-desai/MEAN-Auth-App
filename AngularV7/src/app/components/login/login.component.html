@@ -1,0 +1,30 @@
+<div class="container login">
+  <h1>Sign In</h1>
+  <p>User your mean account.</p>
+  <hr />
+  <form (ngSubmit)="onLoginSubmit()">
+    <div class="form-group">
+      <label for="username"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Username or Email"
+        name="username"
+        id="username"
+        [(ngModel)]="username"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        id="password"
+        [(ngModel)]="password"
+        class="form-control"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Login</button>
+  </form>
+</div>

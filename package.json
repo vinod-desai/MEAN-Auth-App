@@ -1,0 +1,21 @@
+{
+  "name": "mean_authapp",
+  "version": "1.0.0",
+  "description": "MEAN Authentication Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "jsonwebtoken": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "Vinod Desai",
+  "license": "MIT"
+}

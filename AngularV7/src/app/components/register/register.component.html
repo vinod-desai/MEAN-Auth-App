@@ -1,0 +1,64 @@
+<form (ngSubmit)="registerUser()">
+  <div class="">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr />
+    <div class="form-group">
+      <label for="name"><b>Name</b></label>
+      <input
+        type="text"
+        placeholder="Enter Name"
+        name="name"
+        class="form-control"
+        [(ngModel)]="name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="username"><b>User Name</b></label>
+      <input
+        type="text"
+        placeholder="Enter User Name"
+        name="username"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email"><b>Email</b></label>
+      <input
+        type="text"
+        placeholder="Enter Email"
+        name="email"
+        class="form-control"
+        [(ngModel)]="email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="password"
+        class="form-control"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="confirmpassword"><b>Confirm Password</b></label>
+      <input
+        type="password"
+        placeholder="Confirm Password"
+        name="confirmpassword"
+        class="form-control"
+        [(ngModel)]="confirmpassword"
+      />
+    </div>
+    <hr />
+
+    <button type="submit" class="btn btn-success">Register</button>
+  </div>
+
+  <div class="well well-sm mt-2" style="margin-top: 1em">
+    <p>Already have an account? <a routerLink="login">Sign in</a>.</p>
+  </div>
+</form>
